@@ -56,8 +56,11 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Start application
+      - name: Install PM2
         run: |
           npm install -g pm2
-          pm2 stop app || true
-          pm2 start index.js --name app
+          
+      - name: Start application in pm2
+        run: |
+          pm2 delete "Server" || true
+          pm2 start "npm start" --name="Server"
