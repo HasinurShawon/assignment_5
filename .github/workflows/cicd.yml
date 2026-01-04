@@ -21,11 +21,14 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Run tests and save restults
+      - name: Run tests and save results
         run: |
-          echo "No tests defined yet" > test-restults.txt || true
+          npm test > test-results.txt || true
 
-
-
+      - name: Upload test results
+        uses: actions/upload-artifact@v3
+        with: 
+          name: test-results
+          path: test-results.txt 
 
   # Deploy:
