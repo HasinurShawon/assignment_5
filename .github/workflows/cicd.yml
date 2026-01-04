@@ -23,7 +23,7 @@ jobs:
 
       - name: Run tests and save restults
         run: |
-          npm test > test-restults || true
+          npm test > test-restults.txt || true
 
 
 
