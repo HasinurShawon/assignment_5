@@ -37,7 +37,7 @@ jobs:
     needs: test
     steps:
       - name: Install nginx
-        uses: sudo apt install nginx
+        run: sudo apt install nginx
 
       - name: Checkout code
         uses: actions/checkout@v2
