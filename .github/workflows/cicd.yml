@@ -65,4 +65,5 @@ jobs:
 
       - name: Start application in pm2
         run: |
-          pm2 restart "npm start" --name="Server"
+          pm2 delete "Server" || true
+          pm2 start "npm start" --name="Server"
