@@ -78,3 +78,4 @@ jobs:
       - name: Start application in pm2
         run: |
           pm2 restart Server || pm2 start "npm start" --name Server
+          
