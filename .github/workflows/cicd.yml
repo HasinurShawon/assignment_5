@@ -23,6 +23,7 @@ jobs:
 
       - name: Run tests and save results
         run: |
+          npm run check
           npm run check > test-results.txt || true
 
       - name: Upload test results
