@@ -1,4 +1,4 @@
-
+[![CICD Pipeline](https://github.com/HasinurShawon/assignment_5/actions/workflows/cicd.yml/badge.svg?branch=main)](https://github.com/HasinurShawon/assignment_5/actions/workflows/cicd.yml)
 
 ## Prerequisites
 
